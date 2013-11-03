@@ -21,6 +21,7 @@ public class AppPersona {
         Persona carlo = new Persona();
         carlo.setNombresApellidos("Carlo", "EA");
         carlo.printNombreCompleto();
+        
     }
     
     

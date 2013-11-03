@@ -2,9 +2,12 @@ package app.clase2.persona;
 
 public class Persona {
 
-    public String nombres;
-    public String apellidos;
+    private String nombres;
+    private String apellidos;
     public int edad;
+
+    public Persona() {
+    }
 
     public Persona(String nombres, String apellidos, int edad) {
         this.nombres = nombres;
@@ -12,16 +15,14 @@ public class Persona {
         this.edad = edad;
         this.printNombreCompleto();
     }
-    
-    public Persona(){}
-    
-    
-    public void setNombresApellidos(String nombres, String apellidos){
-        
+
+    public void setNombresApellidos(String nombres, String apellidos) {
+        this.nombres = nombres;
+        this.apellidos = apellidos;
     }
-    
-    public void printNombreCompleto(){
-        System.out.println(nombres+" "+apellidos);
+
+    public void printNombreCompleto() {
+        System.out.println(nombres + " " + apellidos);
     }
 
     public String getNombres() {
@@ -47,10 +48,4 @@ public class Persona {
     public void setEdad(int edad) {
         this.edad = edad;
     }
-    
-    
-    
-    
-    
-    
 }
